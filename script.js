@@ -80,7 +80,7 @@ const questions = [
   },
   {
     category: "YOUR GROUP-PROJECT ENERGY",
-    title: "The group project just learned about the deadline and are crashing out.",
+    title: "The group project just learned about the deadline and they're crashing out.",
     subtitle: "What role do you naturally fall into?",
     answers: [
       { text: "I make the task list, timeline, and shared doc.", type: "mastermind" },
