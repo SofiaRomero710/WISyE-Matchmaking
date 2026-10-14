@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5eae3">
+  <meta name="description" content="Take the WISyE Type personality quiz and find your people within WISyE.">
+  <title>Find Your WISyE Type</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="wordmark" href="#" id="home-link" aria-label="WISyE Type home">WISyE <span>TYPE</span></a>
+      <p class="header-note">THE WISyE PERSONALITY PROJECT</p>
+    </header>
+
+    <main id="app" class="main-content">
+      <section id="intro-screen" class="intro-screen">
+        <p class="eyebrow"><span class="sparkle">✳</span> SIX PERSONALITIES. ONE COMMUNITY.</p>
+        <h1>Find your<br><em>WISyE Type.</em></h1>
+        <p class="intro-copy">Your people are in here somewhere. Take this little personality quiz to find your vibe, your type, and your corner of WISyE.</p>
+        <div class="intro-stamps" aria-label="Quiz details">
+          <span>10 QUESTIONS</span><span>NO WRONG ANSWERS</span><span>JUST FOR FUN</span>
+        </div>
+        <button id="start-button" class="button button-dark">Find my type <span aria-hidden="true">↗</span></button>
+        <p class="tiny-note">A little self-discovery. A little friendly calling-out. A lot more connection.</p>
+        <div class="decor decor-star" aria-hidden="true">✳</div>
+        <div class="decor decor-scribble" aria-hidden="true">your era<br>starts here ↘</div>
+      </section>
+
+      <section id="quiz-screen" class="quiz-screen hidden" aria-live="polite">
+        <div class="quiz-topline">
+          <span id="question-count">QUESTION 01 / 10</span>
+          <span id="progress-percent">10%</span>
+        </div>
+        <div class="progress-track" role="progressbar" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="10" aria-valuenow="1" id="progress-track">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+        <p id="question-category" class="eyebrow">YOUR SOCIAL ENERGY</p>
+        <h2 id="question-title" class="question-title">Question goes here</h2>
+        <p id="question-subtitle" class="question-subtitle">Pick the answer that feels most like you.</p>
+        <div id="answer-list" class="answer-list"></div>
+        <div class="quiz-footer">
+          <button id="back-button" class="text-button" type="button">← Previous</button>
+          <span class="tiny-note">Go with your gut. Don't overthink it.</span>
+        </div>
+      </section>
+
+      <section id="result-screen" class="result-screen hidden">
+        <div class="result-heading">
+          <p class="eyebrow">YOUR WISyE TYPE IS IN</p>
+          <span class="result-number" id="result-number">TYPE 01</span>
+        </div>
+        <div id="result-card" class="result-card">
+          <div id="result-card-top" class="result-card-top">
+            <span class="card-kicker">THE WISyE TYPE COLLECTION</span>
+            <span id="result-symbol" class="result-symbol" aria-hidden="true">✳</span>
+            <p id="result-short-label" class="result-short-label">THE CONNECTOR</p>
+            <h2 id="result-name" class="result-name">The Social Spark</h2>
+            <p id="result-tagline" class="result-tagline">You make the room feel like a group chat.</p>
+          </div>
+          <div class="result-card-body">
+            <p id="result-description" class="result-description"></p>
+            <div class="result-details">
+              <div><span class="detail-label">YOUR SUPERPOWER</span><p id="result-superpower"></p></div>
+              <div><span class="detail-label">YOUR VERY SPECIFIC TRAIT</span><p id="result-trait"></p></div>
+              <div><span class="detail-label">YOUR IDEAL HANG</span><p id="result-hang"></p></div>
+            </div>
+            <p class="card-footer">FIND YOUR PEOPLE, FIND YOUR TYPE. <span>WISyE ✳</span></p>
+          </div>
+        </div>
+        <div class="result-actions">
+          <button id="share-button" class="button button-dark">Share my type ↗</button>
+          <button id="download-button" class="button button-light">Download my card ↓</button>
+          <button id="copy-button" class="button button-light">Copy result</button>
+          <button id="restart-button" class="text-button">↻ Retake the quiz</button>
+        </div>
+        <p id="share-status" class="share-status" role="status" aria-live="polite"></p>
+        <section class="community-panel">
+          <p class="eyebrow">YOUR LITTLE CORNER OF WISyE</p>
+          <h3>Find your type. Meet your people.</h3>
+          <p id="community-copy"></p>
+          <p class="community-note">Want to join a type-based group? Share your result with WISyE's organizers and opt in when group sign-ups open. Your result stays on this page; this quiz does not collect or submit personal data.</p>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>MADE FOR THE WISyE COMMUNITY</span>
+      <span>NOT A SCIENTIFIC PERSONALITY TEST — JUST A FUN WAY TO CONNECT.</span>
+    </footer>
+  </div>
+</body>
+</html>
