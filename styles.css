@@ -146,3 +146,75 @@ h1 em { color: var(--pink); font-weight: 600; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
 }
+
+/* SCRAPBOOK EDITION — layered paper, tape, collage accents, and hand-cut edges */
+:root {
+  --paper: #e9e0cf; --paper-light: #f8f2e5; --ink: #233e73; --muted: #647a91;
+  --pink: #d55c98; --line: #c8c1ae; --shadow: 5px 7px 0 rgba(44, 51, 72, .12);
+}
+body {
+  background-color: #e8dfcc;
+  background-image: radial-gradient(ellipse at 15% 12%, rgba(219,91,149,.13), transparent 20rem), radial-gradient(ellipse at 88% 25%, rgba(56,128,99,.12), transparent 22rem), repeating-linear-gradient(0deg, rgba(72,65,52,.025) 0px, rgba(72,65,52,.025) 1px, transparent 1px, transparent 5px);
+}
+.page-shell { width: min(100% - 28px, 1020px); }
+.site-header { border: 0; padding: 12px 16px; margin-top: 12px; background: #f8f2e5; box-shadow: 4px 5px 0 rgba(35,62,115,.16); transform: rotate(-.35deg); position: relative; }
+.site-header::before { content: ""; position: absolute; width: 94px; height: 22px; background: rgba(231,179,194,.72); top: -8px; left: 42%; transform: rotate(2deg); }
+.wordmark { font-family: "Playfair Display", Georgia, serif; font-size: 1.55rem; letter-spacing: -.07em; }
+.wordmark span { color: #d55c98; }
+.header-note { font-family: "Playfair Display", Georgia, serif; }
+.main-content { padding: 42px 0 64px; }
+.intro-screen, .quiz-screen, .community-panel { background-color: var(--paper-light); background-image: radial-gradient(circle at 20% 20%, rgba(255,255,255,.75), transparent 18rem), repeating-linear-gradient(0deg, transparent 0 31px, rgba(74,106,151,.10) 31px 32px); border: 2px solid #fffaf0; border-radius: 2px 7px 3px 8px; box-shadow: 7px 9px 0 rgba(35,62,115,.12), 0 18px 45px rgba(63,53,42,.12); position: relative; }
+.intro-screen { transform: rotate(-.25deg); }
+.intro-screen::before, .quiz-screen::before { content: ""; position: absolute; z-index: 3; width: 106px; height: 25px; background: rgba(223,170,190,.67); top: -10px; left: 38px; transform: rotate(-5deg); box-shadow: 0 1px 2px rgba(55,44,44,.08); }
+.intro-screen::after { content: "✂  CUT ALONG THE VIBE"; position: absolute; right: 24px; top: 20px; color: #c04f87; font-size: .58rem; font-weight: 700; letter-spacing: .13em; transform: rotate(5deg); }
+.eyebrow { color: #c04f87; }
+h1, .question-title, .result-name, .community-panel h3 { font-family: "Playfair Display", Georgia, serif; }
+h1 { color: #233e73; text-shadow: 2px 2px 0 #e9b8cc; }
+h1 em { color: #d55c98; }
+.intro-copy { color: #455a76; }
+.intro-stamps span { background: #dce8d7; border: 1px dashed #69856c; border-radius: 2px; transform: rotate(-1deg); }
+.intro-stamps span:nth-child(2) { background: #f5dce7; transform: rotate(1.5deg); }
+.intro-stamps span:nth-child(3) { background: #f2dfb4; transform: rotate(-1deg); }
+.button { border-radius: 3px 10px 4px 9px; box-shadow: 3px 4px 0 rgba(35,62,115,.17); }
+.button-dark { background: #233e73; }
+.button-light { background: #f5dce7; border: 1px dashed #c76b93; }
+.decor-star { color: #e0a92f; text-shadow: 2px 2px 0 #d55c98; transform: rotate(12deg); }
+.decor-scribble { color: #c04f87; background: #f4d9e4; padding: 10px 12px; box-shadow: 3px 4px 0 rgba(35,62,115,.14); }
+.quiz-screen { transform: rotate(.18deg); }
+.progress-track { background: #e9d4d5; border: 1px solid #d5b8c4; }
+.progress-fill { background: repeating-linear-gradient(135deg, #d55c98 0 7px, #e77cb1 7px 14px); }
+.answer-option { border: 1.5px dashed #b8b2a5; border-radius: 3px 8px 3px 8px; background: rgba(255,252,244,.92); box-shadow: 2px 3px 0 rgba(35,62,115,.07); }
+.answer-option:nth-child(odd) { transform: rotate(-.25deg); }
+.answer-option:nth-child(even) { transform: rotate(.25deg); }
+.answer-option:hover { border-color: #d55c98; transform: translateX(3px) rotate(0); }
+.answer-option.selected { background: #f5dce7; border: 2px solid #d55c98; }
+.answer-letter { border-radius: 3px; background: #dce8d7; color: #233e73; transform: rotate(-4deg); }
+.answer-option:nth-child(2) .answer-letter { background: #f2dfb4; }
+.answer-option:nth-child(3) .answer-letter { background: #e5d9ef; }
+.answer-option:nth-child(4) .answer-letter { background: #d9e9eb; }
+.answer-option.selected .answer-letter { background: #d55c98; }
+.text-button { color: #385985; }
+.result-card { position: relative; border: 2px solid #fffaf0; border-radius: 2px 8px 3px 9px; box-shadow: 7px 9px 0 rgba(35,62,115,.14), 0 18px 45px rgba(63,53,42,.12); transform: rotate(-.2deg); }
+.result-card-top { background-image: radial-gradient(circle at 85% 12%, rgba(255,255,255,.45), transparent 14rem), repeating-linear-gradient(135deg, rgba(255,255,255,.08) 0 8px, transparent 8px 16px); border-bottom: 2px dashed rgba(35,62,115,.25); }
+.result-card-top::before { content: ""; position: absolute; width: 88px; height: 22px; background: rgba(237,201,105,.72); top: -8px; right: 42px; transform: rotate(7deg); }
+.result-card-top::after { opacity: .65; }
+.result-short-label { color: #a9447b; }
+.result-card-body { background-image: repeating-linear-gradient(0deg, transparent 0 31px, rgba(74,106,151,.075) 31px 32px); }
+.result-details > div { border: 1px dashed #c8b8a7; border-radius: 2px 7px 3px 7px; box-shadow: 2px 3px 0 rgba(35,62,115,.06); }
+.detail-label { color: #b24e83; }
+.community-panel { margin-top: 24px; transform: rotate(.15deg); border: 2px dashed #cbaab5; }
+.community-panel::before { content: "KEEP THIS LITTLE NOTE"; position: absolute; right: 18px; top: -11px; background: #e4eadb; padding: 3px 8px; color: #55745b; font-size: .55rem; font-weight: 700; letter-spacing: .1em; transform: rotate(2deg); }
+.site-footer { border-top: 1px dashed #b8ad9e; }
+.theme-social .result-card-top { background-color: #f4dce5; }
+.theme-mastermind .result-card-top { background-color: #dce7d6; }
+.theme-thinker .result-card-top { background-color: #e5d9ef; }
+.theme-wildcard .result-card-top { background-color: #f2dfb4; }
+.theme-lowkey .result-card-top { background-color: #d9e9eb; }
+.theme-curator .result-card-top { background-color: #f0d8c9; }
+@media (max-width: 620px) {
+  .site-header { margin-top: 8px; }
+  .site-header::before { left: 35%; width: 72px; height: 18px; }
+  .intro-screen::after { top: 12px; right: 14px; font-size: .48rem; }
+  .decor-scribble { display: none; }
+  .intro-screen::before, .quiz-screen::before { left: 22px; width: 78px; height: 20px; }
+}
