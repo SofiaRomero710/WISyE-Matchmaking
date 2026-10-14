@@ -68,7 +68,7 @@ const types = {
 // This is a fun reflection tool, not a validated psychological assessment.
 const questions = [
   {
-    category: "YOUR SOCIAL ENERGY",
+    category: "GBM TIME",
     title: "You walk into a WISyE event and only know one person. What's your move?",
     subtitle: "Be honest. Nobody is grading your networking skills.",
     answers: [
@@ -80,7 +80,7 @@ const questions = [
   },
   {
     category: "YOUR GROUP-PROJECT ENERGY",
-    title: "The group project has officially entered the group-chat chaos era.",
+    title: "The group project just learned about the deadline and are crashing out.",
     subtitle: "What role do you naturally fall into?",
     answers: [
       { text: "I make the task list, timeline, and shared doc.", type: "mastermind" },
@@ -90,8 +90,8 @@ const questions = [
     ]
   },
   {
-    category: "YOUR IDEAL FRIDAY",
-    title: "Your ideal Friday night is giving…",
+    category: "ITS FRIYAY",
+    title: "Your ideal Friday night is…",
     subtitle: "Choose the scene you would actually look forward to.",
     answers: [
       { text: "A spontaneous plan that becomes the story of the semester.", type: "wildcard" },
@@ -112,7 +112,7 @@ const questions = [
     ]
   },
   {
-    category: "YOUR SOCIAL BATTERY",
+    category: "SURVIVED THE WEEK",
     title: "After a packed week, what kind of reset sounds best?",
     subtitle: "Protecting your peace is a valid answer.",
     answers: [
@@ -124,7 +124,7 @@ const questions = [
   },
   {
     category: "YOUR FRIENDSHIP STYLE",
-    title: "What's your underrated friendship superpower?",
+    title: "What's your underrated friendship skill?",
     subtitle: "The small things count.",
     answers: [
       { text: "I remember to invite people in and make introductions.", type: "social" },
